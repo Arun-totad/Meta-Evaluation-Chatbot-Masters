@@ -1,0 +1,19 @@
+Install Ollama LLM locally and execute it through cmd with: 
+	Ollama pull llama2
+
+Execution of the chatbot:
+1. Open a Command Prompt
+2. Change directory to mavericks/source/ to reach file RAG_ChatGenerativePre-trainedTransformer.py
+3. Create a new virtual environment using command: 
+		python3 -m venv .venv
+		.venv\Scripts\activate.bat		
+4. Install the necessary import for the program:
+		pip install -r requirements.txt
+5. Initiate a local ollama interface with chainlit for with the file RAG_ChatGenerativePre-trainedTransformer.py using below command:
+		chainlit run fileName.py
+		
+Initiate the virtual machine and execute if unable to execute above:	
+	cd {path}\.venv\Scripts
+	activate.bat
+	cd ../..
+	chainlit run ragChatBot.py
